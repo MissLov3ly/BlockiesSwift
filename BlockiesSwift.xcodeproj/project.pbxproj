@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A92059621A4633D007539CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A92059521A4633D007539CD /* AppDelegate.swift */; };
+		0A92059821A4633D007539CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A92059721A4633D007539CD /* ViewController.swift */; };
+		0A92059B21A4633D007539CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A92059921A4633D007539CD /* Main.storyboard */; };
+		0A92059D21A4633E007539CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A92059C21A4633E007539CD /* Assets.xcassets */; };
+		0A9205A021A4633E007539CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A92059E21A4633E007539CD /* LaunchScreen.storyboard */; };
+		0A9205A621A46349007539CD /* BlockiesSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD8FD0820CEC20300591B91 /* BlockiesSwift.framework */; };
+		0A9205A821A46687007539CD /* UIImage+Blockies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9205A721A46687007539CD /* UIImage+Blockies.swift */; };
 		0AD8FD0D20CEC20300591B91 /* BlockiesSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AD8FD0B20CEC20300591B91 /* BlockiesSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AD8FD1920CEC24500591B91 /* Color+HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8FD1620CEC24500591B91 /* Color+HSL.swift */; };
 		0AD8FD1A20CEC24500591B91 /* Blockies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8FD1720CEC24500591B91 /* Blockies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A92059321A4633D007539CD /* BlockiesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockiesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A92059521A4633D007539CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A92059721A4633D007539CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A92059A21A4633D007539CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A92059C21A4633E007539CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A92059F21A4633E007539CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A9205A121A4633E007539CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9205A721A46687007539CD /* UIImage+Blockies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Blockies.swift"; sourceTree = "<group>"; };
 		0AD8FD0820CEC20300591B91 /* BlockiesSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BlockiesSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD8FD0B20CEC20300591B91 /* BlockiesSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockiesSwift.h; sourceTree = "<group>"; };
 		0AD8FD0C20CEC20300591B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,6 +36,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A92059021A4633D007539CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9205A621A46349007539CD /* BlockiesSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AD8FD0420CEC20300591B91 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,11 +54,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A92059421A4633D007539CD /* BlockiesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0A92059521A4633D007539CD /* AppDelegate.swift */,
+				0A92059721A4633D007539CD /* ViewController.swift */,
+				0A92059921A4633D007539CD /* Main.storyboard */,
+				0A92059C21A4633E007539CD /* Assets.xcassets */,
+				0A92059E21A4633E007539CD /* LaunchScreen.storyboard */,
+				0A9205A121A4633E007539CD /* Info.plist */,
+			);
+			path = BlockiesDemo;
+			sourceTree = "<group>";
+		};
+		0A9205A521A46349007539CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0AD8FCFE20CEC20300591B91 = {
 			isa = PBXGroup;
 			children = (
 				0AD8FD0A20CEC20300591B91 /* BlockiesSwift */,
+				0A92059421A4633D007539CD /* BlockiesDemo */,
 				0AD8FD0920CEC20300591B91 /* Products */,
+				0A9205A521A46349007539CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -43,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0AD8FD0820CEC20300591B91 /* BlockiesSwift.framework */,
+				0A92059321A4633D007539CD /* BlockiesDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +108,7 @@
 			children = (
 				0AD8FD1520CEC24500591B91 /* Toolbox */,
 				0AD8FD1720CEC24500591B91 /* Blockies.swift */,
+				0A9205A721A46687007539CD /* UIImage+Blockies.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -88,6 +135,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0A92059221A4633D007539CD /* BlockiesDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A9205A421A4633E007539CD /* Build configuration list for PBXNativeTarget "BlockiesDemo" */;
+			buildPhases = (
+				0A92058F21A4633D007539CD /* Sources */,
+				0A92059021A4633D007539CD /* Frameworks */,
+				0A92059121A4633D007539CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlockiesDemo;
+			productName = BlockiesDemo;
+			productReference = 0A92059321A4633D007539CD /* BlockiesDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 		0AD8FD0720CEC20300591B91 /* BlockiesSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AD8FD1020CEC20300591B91 /* Build configuration list for PBXNativeTarget "BlockiesSwift" */;
@@ -112,9 +176,13 @@
 		0AD8FCFF20CEC20300591B91 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Dmitry Bespalov";
 				TargetAttributes = {
+					0A92059221A4633D007539CD = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					0AD8FD0720CEC20300591B91 = {
 						CreatedOnToolsVersion = 9.4;
 					};
@@ -126,6 +194,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 0AD8FCFE20CEC20300591B91;
 			productRefGroup = 0AD8FD0920CEC20300591B91 /* Products */;
@@ -133,11 +202,22 @@
 			projectRoot = "";
 			targets = (
 				0AD8FD0720CEC20300591B91 /* BlockiesSwift */,
+				0A92059221A4633D007539CD /* BlockiesDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0A92059121A4633D007539CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A9205A021A4633E007539CD /* LaunchScreen.storyboard in Resources */,
+				0A92059D21A4633E007539CD /* Assets.xcassets in Resources */,
+				0A92059B21A4633D007539CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AD8FD0620CEC20300591B91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -148,18 +228,88 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A92058F21A4633D007539CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A92059821A4633D007539CD /* ViewController.swift in Sources */,
+				0A92059621A4633D007539CD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0AD8FD0320CEC20300591B91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0AD8FD1920CEC24500591B91 /* Color+HSL.swift in Sources */,
+				0A9205A821A46687007539CD /* UIImage+Blockies.swift in Sources */,
 				0AD8FD1A20CEC24500591B91 /* Blockies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		0A92059921A4633D007539CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A92059A21A4633D007539CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A92059E21A4633E007539CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A92059F21A4633E007539CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		0A9205A221A4633E007539CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BlockiesDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.BlockiesDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A9205A321A4633E007539CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BlockiesDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.example.BlockiesDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		0AD8FD0E20CEC20300591B91 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -333,6 +483,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0A9205A421A4633E007539CD /* Build configuration list for PBXNativeTarget "BlockiesDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A9205A221A4633E007539CD /* Debug */,
+				0A9205A321A4633E007539CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0AD8FD0220CEC20300591B91 /* Build configuration list for PBXProject "BlockiesSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
